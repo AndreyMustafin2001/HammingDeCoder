@@ -47,19 +47,19 @@ int decoder(uint16_t a,uint8_t &bits)
             p[i] = 1;
     }
     std::cout <<"First Half:"<<std::endl;
-    if(k=1)
+    if(k==1)
     {
         std::cout<<"No errors"<<std::endl;
     }
-    else if(k=2)
+    else if(k==2)
     {
         std::cout<<"Single error in p4"<<std::endl;
     }
-    else if(k=3)
+    else if(k==3)
     {
         std::cout<<"Double error!"<<std::endl;
     }
-    else if(k=4)
+    else if(k==4)
     {
         std::cout<<"Single error!"<<std::endl;
 
@@ -119,22 +119,22 @@ int decoder(uint16_t a,uint8_t &bits)
         z++;
     }
     std::cout<<"Second Half: "<<std::endl;
-    if(f=1)
+    if(f==1)
     {
         std::cout<<"No errors"<<std::endl;
         return 1;
     }
-    if(f=2)
+    if(f==2)
     {
         std::cout<<"Single error in p4"<<std::endl;
         return 2;
     }
-    if(f=3)
+    if(f==3)
     {
         std::cout<<"Double error!"<<std::endl;
         return 3;
     }
-    if(f=4)
+    if(f==4)
     {
         std::cout<<"Single error!"<<std::endl;
         return 4;
